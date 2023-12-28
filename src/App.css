@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+  font-family: 'Inter';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav-logo{
+  width: 200px;
+  height: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.backgroundImage{
   display: flex;
+  height: 110vh;
+  background-image: url('./Images/BackgroundImg.jpg');
+  background-size: cover;
+}
+
+.intro{
+  display: flex;
+  position:absolute;
+  margin: 394px 800px 60px 80px;
+  padding: 20px 40px 30px 40px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  gap: 20px;
+  background: linear-gradient(257deg, #1CBDDD 27.86%, #4DCA79 100%);
+}
+
+.intro-text{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 48px */
+  letter-spacing: -0.96px;
+  text-transform: capitalize;
+}
+
+.button{
+  border-radius: 4px;
+  border-color: #F28D35;
   color: white;
+  background: #F28D35;
+  display: flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.content-margin{
+  max-width: calc(100% - 28rem);
+  width: 100rem;
+  margin: 20px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-content{
+  display: inline-flex;
+  align-items: center;
+  gap: 108px;
+}
+
+.home-content-text{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.image{
+  width: 100%;
+  height: auto;
+}
+
+.heading{
+  color: #6B3CC9;
+  font-family: 'Poppins';
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px; /* 122.222% */
+  letter-spacing: 0.4px;
+}
+
+.paragraph{
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer{
+  display: flex;
+}
+@media only screen and (max-width: 1300px) {
+
+  .intro{
+    display: flex;
+    position:absolute;
+    margin: 500px 0px 0px 0px;
+    padding: 20px 40px 30px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background: linear-gradient(257deg, #1CBDDD 27.86%, #4DCA79 100%);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .intro-text{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 48px */
+    letter-spacing: -0.96px;
+    text-transform: capitalize;
+  }
+  
+  .content-margin{
+    max-width: calc(100% - 5rem);
+    width: 100rem;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-margin{
+    max-width: calc(100% - 1rem);
+    width: 100rem;
+    margin: 100px auto;
+  }
+
+  .home-content{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
