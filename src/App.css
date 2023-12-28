@@ -104,56 +104,38 @@
 .footer{
   display: flex;
 }
-@media only screen and (max-width: 1300px) {
 
-  .intro{
-    display: flex;
-    position:absolute;
-    margin: 500px 0px 0px 0px;
-    padding: 20px 40px 30px 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    background: linear-gradient(257deg, #1CBDDD 27.86%, #4DCA79 100%);
+@media only screen and (max-width: 1300px) {
+  .intro {
+    margin: 250px 0 0 0;
+    padding: 20px;
   }
-  
-  .intro-text{
-    color: #FFF;
-    font-family: Inter;
+
+  .intro-text {
     font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%; /* 48px */
-    letter-spacing: -0.96px;
-    text-transform: capitalize;
   }
-  
-  .content-margin{
+
+  .content-margin {
     max-width: calc(100% - 5rem);
-    width: 100rem;
-    margin: 20px auto;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .content-margin{
+  .content-margin {
     max-width: calc(100% - 1rem);
-    width: 100rem;
-    margin: 100px auto;
+    margin: 50px auto;
   }
 
-  .home-content{
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
+  .home-content {
+    display: flex;
+    gap: 10px;
     flex-wrap: wrap;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .footer {
+    flex-direction: column;
+    align-items: center;
   }
 }
